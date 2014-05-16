@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /css/
+Disallow: /dls/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /library/
+Disallow: /temp/
+Disallow: /templates/
+Disallow: /zerozone/

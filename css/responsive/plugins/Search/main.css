@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+.largetext {
+	
+}
+.underline {
+	text-decoration:underline;
+}
+span.smalltext {
+	display:block;
+	margin: 3px 0 0 0;
+	font-size:95%;
+}
+.smalltext {
+	
+}
+.SearchLink {
+	
+}
+abbr {
+	border-bottom:1px dashed #000;	
+}
+#FloatPullDownsRight {
+	float:right;
+	text-align:left;
+	position:relative;
+	border:1px solid #000;
+	padding:5px;
+	width:250px;
+	font-size:85%;
+}
+#FloatSearchCenter {
+	float:right;
+	position:relative;
+	text-align:center;
+	width:250px;
+}
+#FloatDatesLeft {
+	float:left;
+	position:relative;
+	text-align:center;
+	width:145px;
+	font-size:85%;
+}
+.flCol-left {
+	float:left;
+	width:38%;
+}
+.flCol-right {
+	float:left;
+	width:62%;
+}

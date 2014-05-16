@@ -1,0 +1,664 @@
+#modalLoadBody {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align:center;
+	width:100%;
+}
+.displayNone {
+	display:none;
+}
+#contactUsErrorList {
+	margin:0;
+	padding:0;
+}
+#category {
+	width:						150px;	
+}
+.loggedin {
+	text-align:					center;
+	vertical-align:				middle;
+	line-height:				42px;
+	color:						#FFFFFF;
+	float:						right;
+	margin:						0 25px 0 0;
+}
+.loggedin a {
+	color:						#FFFFFF;
+}
+.white {
+	color:						#FFFFFF;
+}
+#SearchString {
+	width:						250px;
+}
+.FormRightColumn input {
+	width:						150px;	
+}
+.FormContainer textarea {
+	width:						300px;	
+}
+.footer-icons {
+	vertical-align:				middle;
+	display:					inline;
+	float:						right;
+	margin:						0 2px 0 2px;
+}
+footer {
+	font-size:					10px;	
+}
+#contentWorkLeft {
+	background-color: 			#fff;
+    background-image: 			-webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+    background-image: 			-webkit-linear-gradient(top, #fff, #ddd); 
+    background-image:    		-moz-linear-gradient(top, #fff, #ddd); 
+    background-image:     		-ms-linear-gradient(top, #fff, #ddd); 
+    background-image:      		-o-linear-gradient(top, #fff, #ddd); 
+    background-image:         	linear-gradient(top, #fff, #ddd);
+    -moz-border-radius: 		0 2px 2px 2px;
+    -webkit-border-radius: 		0 2px 2px 2px;
+    border-radius: 				0 2px 2px 2px;
+    -moz-box-shadow: 			0 2px 2px #000, 0 -1px 0 #fff inset;
+    -webkit-box-shadow: 		0 2px 2px #000, 0 -1px 0 #fff inset;
+    box-shadow: 				0 2px 2px #000, 0 -1px 0 #fff inset;
+    padding: 					30px;
+	border:						1px solid #ddd;
+}
+#skillsContent {
+	padding-right:5px;
+}
+#skillsRight {
+	display:inline;
+	padding-left:10px;
+	padding-top:0px;
+	width:315px;
+	float:right;
+}
+/*********************
+  BREADCRUMBS
+*********************/
+#columnBreadcrumb {
+	text-transform:			none;
+  	font-weight: 			normal;
+	margin: 				12px 0 0 20px;
+	font-size: 				1.0em;
+	text-decoration:		none;
+	color:					#5A6370;
+}
+#columnBreadcrumb a, #columnBreadcrumb a:hover { 
+	padding: 0px 0px 2px 0px;
+  	text-decoration: underline;
+	color:#5A6370;
+}
+#columnBreadcrumb a:hover{
+	text-decoration: none;
+	color:#5A6370;
+}
+/*********************
+  GRID ITEMS
+*********************/
+#adminTable {
+	width:					100%;
+}
+.container {
+	width: 					100%;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.LeftColumn, .RightColumn {
+	display: 				inline;
+	margin-left: 			10px;
+	margin-right: 			10px;
+	margin-top:				0;
+	margin-bottom:			0;
+}
+.container .LeftColumn {
+	width: 					25%;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.container .RightColumn {
+	width: 					73%;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.LeftColumn ul {
+	margin:					0 0 0 0;
+	padding:				0 0 0 20px;
+}
+.FormContainer {
+	margin-left: 			auto;
+	margin-right: 			auto;
+	margin-bottom:			0;
+	margin-top:				0;
+	width: 					100%;
+	display:				block;
+	clear:					both;
+}
+/* Small Container */
+.LCol, .RCol {
+	display:				block;
+}
+.LCol {
+	width: 					50%;
+	text-align:				left;
+	float:					left;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.RCol {
+	width: 					50%;
+	float:					left;
+	text-align:				right;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.LCol label {
+	display:				inline;
+}
+.RCol label {
+	display:				inline;
+}
+.LColEven {
+	width: 					50%;
+	text-align:				left;
+	float:					left;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.RColEven {
+	width: 					50%;
+	float:					left;
+	text-align:				right;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.RColEvenBottom {
+	text-align:				right;
+	width:					99%;
+	display:				block;
+	padding:				0 15px 0 0;
+}
+.RColEvenCenter {
+	width:					84%;
+	float:					left;
+	text-align:				right;
+	display:				inline-block;
+	height:					28px;
+	margin:					2px 0 5px 0;
+	padding:				0;
+}
+.smallContainer {
+	width: 					100%;
+	margin: 				0;
+}
+.smallContainer {
+	background-color:		#FFF;
+	text-align:				center;
+}
+#column2 .smallContainer h2 { 
+  	text-transform:			none;
+  	font-weight: 			bold;
+	margin: 				0 0 0 0;
+  	padding: 				3px 0 3px 0;
+  	font-size: 				1.1em;
+	text-decoration:		none;
+	color:					#FFF;
+	background-color:		#000;
+}
+.MainContainer {
+	width: 					100%;
+	margin: 				0 auto;
+}
+.MainContainer {
+	text-align:				center;
+}
+.nopad {
+	padding: 0 0 0 0;
+}
+/* H2 */
+#column2 .MainContainer h2 { 
+  	text-transform:			none;
+  	font-weight: 			bold;
+	margin: 				0 0 0 0;
+  	padding: 				3px 0 3px 0;
+  	font-size: 				1.3em;
+	height:					25px;
+	line-height:			25px;
+	vertical-align:			middle;
+	text-decoration:		none;
+	color:					#FFF;
+	background-color:		#000;
+}
+/* Clearing */
+.clear {
+	clear: 					both;
+	display: 				block;
+	overflow: 				hidden;
+	visibility: 			hidden;
+	width: 					0;
+	height: 				0;
+}
+/* Clearing */
+.clearfix {
+	clear: 					both;
+	display: 				block;
+	overflow: 				hidden;
+	visibility: 			hidden;
+	width: 					0;
+	height: 				0;
+}
+.clrfx:before,
+.clrfx:after,
+.MainContainer:before,
+.MainContainer:after {
+	content: 				'.';
+	display: 				block;
+	overflow: 				hidden;
+	visibility:				hidden;
+	font-size: 				0;
+	line-height: 			0;
+	width: 					0;
+}
+.clrfx:after,
+.MainContainer:after {
+	clear: 					both;
+}
+/*********************
+  FORM ITEMS
+*********************/
+form.inline {
+	display:inline;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+select.inline {
+	display:inline;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+.inline select {
+	display: inline-block;
+	border: 1px solid #bbb;
+	padding: 4px 3px 3px 5px;
+	margin: 0;
+	font: inherit;
+	outline:none; /* remove focus ring from Webkit */
+	line-height: 1.2;
+	background: #f8f8f8;
+	border-radius: 6px;
+}
+select.inline option {
+        background: #EEE; /* Safari */
+}
+select.inline option {
+        background: #EEE; /* Firefox */
+}
+input.inline {
+	display:inline;
+	background: #EEE; /* Firefox */
+	height:25px;
+	line-height:25px;
+	font-size:13px;
+	text-transform:uppercase;
+	font-weight:bold;
+	vertical-align:middle;
+	padding: 0 0 3px 0;
+	margin: 0 0 3px 3px;
+	border-radius: 6px;
+}
+.FormLeftColumn, .FormRightColumn {
+	display: 				inline;
+}
+.FormContainer .FormLeftColumn {
+	float:					left;
+	display: 				inline;
+	padding-right:			15px;
+	padding-top:			5px;
+	text-align:				right;
+	vertical-align:			middle;
+}
+.FormContainer .FormRightColumn {
+	float:					left;
+	display: 				inline;
+	padding-left:			15px;
+	padding-top:			5px;
+	text-align:				right;
+	vertical-align:			middle;
+}
+/*********************
+  Other Alignment ITEMS
+*********************/
+.LeftContentColumn, .RightContentColumn {
+	display:				block;
+}
+.LeftContentColumn {
+	width: 					45%;
+	float:					left;
+	margin:					0 0 0 5px;
+	padding:				8px 0 4px 0;
+}
+.RightContentColumn {
+	width: 					50%;
+	float:					left;
+	text-align:				right;
+	vertical-align:			middle;
+	margin:					0 0 0 0;
+	padding:				4px 0 4px 0;
+}
+.ContentContainer {
+	width: 					500px;
+	margin: 				0 auto;
+}
+.ContentContainer {
+	background-color:		#FFF;
+	text-align:				center;
+}
+#column2 .ContentContainer h2 { 
+  	text-transform:			none;
+  	font-weight: 			bold;
+	margin: 				0 0 0 0;
+  	padding: 				3px 0 3px 0;
+  	font-size: 				1.1em;
+	text-decoration:		none;
+	color:					#FFF;
+	background-color:		#000;
+}
+/* ALT Rows */
+.FirstColor {
+	background-color:		#E9E9E9;
+}
+.SecondColor {
+	background-color:		#FFF;
+}
+.FirstColor:hover {
+	background-color:		#FFC;
+}
+.SecondColor:hover {
+	background-color:		#FFC;
+}
+/*********************
+  PADDING ITEMS
+*********************/
+.paddingBottom5 {
+	margin-bottom:			5px;
+}
+.paddingBottom10 {
+	margin-bottom:			10px;
+}
+/*********************
+  Alignments
+*********************/
+.alignCenter {
+	text-align:				center;
+	width:					100%;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.alignRight {
+	text-align:				right;
+	width:					100%;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.alignLeft {
+	text-align:				left;
+	width:					100%;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.alignTop {
+	vertical-align:			top;
+	height:					inherit;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.alignMiddle {
+	vertical-align:			middle;
+	height:					inherit;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+.alignBottom {
+	vertical-align:			bottom;
+	height:					inherit;
+	margin:					0 0 0 0;
+	padding:				0 0 0 0;
+}
+/* Image Alignments */
+.ImageLeft {
+	float:					left;
+	font-size:				85%;
+	border:					1px solid #000;
+	margin: 				0 15px 8px 0;
+	padding: 				0 0 0 0;
+	box-shadow:				3px 3px 3px #464646;
+}
+.ImageCentered {
+	text-align:				center;
+    display:				block;
+	padding: 				5px;
+}
+.CaptionAlignLeft {
+    display:				inline;
+	padding: 				0 0 0 5px;
+}
+.ImageRight {
+	float:					right;
+	padding-left:			10px;
+}
+/* Font Sizes */
+.font_size_10 {
+	font-size: 10px;
+}
+.font_size_12 {
+	font-size: 12px;
+}
+.font_size_14 {
+	font-size: 14px;
+}
+.font_size_16 {
+	font-size: 16px;
+}
+.font_size_18 {
+	font-size: 18px;
+}
+.bold {
+	font-weight:bold;
+}
+/* image positioning - left, right and center */
+.left { 
+	float:					left; 
+  	padding:				0px 8px 0px 0px;
+	margin:					0 0 0 0;
+}
+.right { 
+	float: 					right; 
+  	padding:				0px 0px 0px 8px;
+	margin:					0 0 0 0;
+}
+.center {
+	display: 				block;
+  	text-align:				center;
+  	margin:					0 auto;
+}
+.rightSocial { 
+	float: 					right;
+	width:					110px;
+  	padding:				2px 0 5px 25px;
+	margin:					0 0 0 0;
+}
+.leftSocial { 
+	float: 					left;
+	width:					110px;
+  	padding:				2px 0 5px 25px;
+	margin:					0 0 0 0;
+}
+/*********************
+  Text Decorator
+*********************/
+.underline {
+	text-decoration:		underline;
+}
+/* padding */
+.padding5 {
+	padding:				5px 5px 5px 5px;
+}
+.red {
+	color:					#FF0000
+}
+.green {
+	color:					#090;
+}
+/* Indent */
+.indent1 {
+	margin:					0 0 0 5px;
+}
+.indent2 {
+	margin:					0 0 0 7px;
+}
+/* List Items Custom */
+#column2 div.inlineList {
+	width: 					100%;
+	background-color:		#CCC;
+	padding:				0;
+	margin:					10px 0 15px 0;
+	height:					25px;
+	border:					1px solid #000;
+}
+#column2 .inlineList ul {
+	margin:					0;
+	padding:				4px;
+}
+#column2 .inlineList ul li {
+	display: 				inline;
+	text-decoration: 		none;
+	color: 					#000;
+	font-weight:			bold;
+	background-color: 		#CCC;
+	padding: 				4px 6px;
+	margin:					0;
+	text-decoration:		underline;
+}
+#column2 .inlineList ul li:hover {
+	display: inline;
+	color:#FFF;
+	text-decoration: none;
+	font-weight:bold;
+	background-color: #0b75b2;
+	padding: 4px 6px;
+	margin:0;
+	text-decoration:underline;
+}
+#column2 .inlineList ul li a {
+	color: #000;
+	text-decoration:underline;
+	font-weight:bold;
+}
+#column2 .inlineList ul li a:hover {
+	color: #FFF;
+	text-decoration: none;
+	font-weight:bold;
+}
+#column2 .inlineList ul li.inlineListArchive {
+	clear:both;
+	display:block;
+	position:relative;
+	float:right;
+	margin:6px 0 0 0;
+	left:5px;
+	border:1px solid #000;
+	font-weight:bold;
+}
+#column2 .inlineList ul li.inlineListArchive:hover {
+	color:#FFF;
+	font-weight:bold;
+}
+#column2 .inlineList ul li.inlineListArchive a {
+	color: #000;
+	text-decoration:underline;
+	font-weight:bold;
+}
+#column2 .inlineList ul li.inlineListArchive a:hover {
+	color: #FFF;
+	text-decoration: none;
+	font-weight:bold;
+}
+/* START: Registration */
+#pwresult {
+	display:none;
+}
+.strong {
+	margin:2px;
+	display:table-cell;
+	font-weight:bold;
+	background-color:#090;
+	color:#FFFFFF;
+	width:320px;
+	height:20px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:20px;
+	font-size:11px;
+}
+.good {
+	margin:2px;
+	display:table-cell;
+	font-weight:bold;
+	background-color:#06F;
+	width:225px;
+	color:#FFFFFF;
+	height:20px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:20px;
+	font-size:11px;
+}
+.fair {
+	margin:2px;
+	display:table-cell;
+	background-color:#FFCC00;
+	color:#000000;
+	width:150px;
+	height:20px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:20px;
+	font-size:11px;
+}
+.weak, .short {
+	margin:2px;
+	display:table-cell;
+	font-weight:bold;
+	color:#000000;
+	background-color:#FF0000;
+	width:75px;
+	height:20px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:20px;
+	font-size:11px;
+}
+#main { width:960px; margin: 0px auto; border:solid 1px #b2b3b5; -moz-border-radius:10px; padding:20px; background-color:#f6f6f6;}
+#header { text-align:center; border-bottom:solid 1px #b2b3b5; margin: 0 0 20px 0; }
+fieldset { border:none; width:320px;}
+legend { font-size:18px; margin:0px; padding:0px; color:#b0232a; font-weight:bold;}
+legend p { font-size:12px; }
+label.registration { display:block; margin:15px 0 5px; font-weight:bold; font-size:16px; }
+input[type=text], input[type=password] { width:300px; padding:5px; }
+.prev, .next { background-color:#b0232a; padding:5px 10px; color:#fff; text-decoration:none;}
+.prev:hover, .next:hover { background-color:#000; text-decoration:none;}
+.prev { float:left;}
+.next { float:right;}
+#steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;}
+#steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+#steps li span {font-size:11px; display:block;}
+#steps li.current { color:#000;}
+#makeWizard { background-color:#b0232a; color:#fff; padding:5px 10px; text-decoration:none; font-size:18px;}
+#makeWizard:hover { background-color:#000;}
+.error { color:#FF0000; font-weight:bold; display:block; padding: 5px 0 0 10px; }
+input[type=text].inputerror, input[type=password].inputerror { border:1px solid #FF0000; width:250px; display:inline; }
+input[type=text].input_field_12em, input[type=password].input_field_12em { width:250px; display:inline; }
+input[type=text].input_field_12em_small, input[type=password].input_field_12em_small { width:250px; display:inline; }
+.input_filefield_12em { width:450px; display:inline; border:1px solid #000000; }
+.font_normal_07em_black { font-size:19px; font-weight: bold; }
+/* END: Registration */

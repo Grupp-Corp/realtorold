@@ -1,0 +1,54 @@
+.Worktabbed_content {
+	background-color: #FFF;
+	width: 100%;
+}
+.Worktabs {
+	height: 22px;
+	position: relative;
+}
+.Worktabs .Workmoving_bg {
+	padding: 12px;
+	background-color:#7F822A;
+	color: #000;
+	background: #FFFFFF url(/images/main/menu.png);
+	position: absolute;
+	width: 311px;
+	z-index: 190;
+	left: 0;
+}
+.Worktabs .Worktab_item {
+	display: block;
+	background: #000 url(/images/main/menu_hover.png) repeat-x;
+	float: left;
+	padding: 10px;
+	font-size:11px;
+	width: 315px;
+	color: #FFF;
+	font-weight:bold;
+	text-align: center;
+	z-index: 200;
+	position: relative;
+	cursor: pointer;
+}
+.Worktabs .Worktab_item span.Worktab_link {
+	color: #FFF;
+	font-weight:bold;
+	font-size:11px;
+}
+.Worktabbed_content .Workslide_content {
+	overflow: hidden;
+	background-color: #FFF;
+	padding: 10px 0 10px 20px;
+	position: relative;
+	width: 650px;
+}
+.Worktabslider {
+	width: 5000px;
+}
+.Worktabslider div.TabContent {
+	float: left;
+	width: 610px;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 40px;
+}

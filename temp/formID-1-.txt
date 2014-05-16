@@ -1,0 +1,1 @@
+{"FormName":"ContactMe","FormID":"ContactMe","HTML5":"1","Captcha":"0","SendEmail":{"Send":"1","EmailAddressRequired":"1","ToField":"steve.scharf@live.ca","ToName":"Steven Scharf","Subject":"CanuckCoder.com Contact Form","Message":"You have received an email from canuckcoder.com.\r\n\r\n","HTML":"1","DomainFrom":"steve.scharf@canuckcoder.com"},"RedirectPage":"","ExtJS":"0"}

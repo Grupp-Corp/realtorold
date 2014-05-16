@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+a,
+button,
+input:focus,
+input:hover,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+textarea:hover {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:    all 0.3s ease-in-out;
+	-ms-transition:     all 0.3s ease-in-out;
+	-o-transition:      all 0.3s ease-in-out;
+	transition:         all 0.3s ease-in-out;
+}
+
+/* Navigation --------------------------------------------------------------------------*/
+.navbar #title {
+	background-image: url(../../images/responsive/logo-bg.png);
+	width: 50%;
+	height: 95px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	float: left;
+}
+.navbar #title a {
+	display: block;
+	width: 320px;
+	height: 95px;
+	background-image: url(../../images/responsive/logo.png);
+	text-indent: -9999px;
+	margin: 0 0 0 100px;
+}
+.nav-collapse.collapse {
+	width: 50%;
+}
+.nav-collapse.collapse ul.nav {
+	width: 100%;
+	height: 45px;
+	margin-top: 25px;
+}
+.nav-collapse.collapse ul.nav li, .nav-collapse.collapse ul.nav li.blue-button {
+	width: 30%;
+	background-image: none;
+	height: 45px;
+	margin: 0;
+}
+.nav-collapse.collapse ul.nav li a {
+	width: 95%;
+	margin-right: 5%;
+	background-color: #000;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	display: block;
+	text-align: center;
+	padding: 0;
+}
+.nav-collapse.collapse ul.nav li.blue-button a {
+	background-color: #0098d8;
+}
+.nav-collapse.collapse ul.nav li a:hover{
+	background-color: #0098d8;
+	color: #000;
+}
+.nav-collapse.collapse ul.nav li.blue-button a:hover{
+	background-color: #d85b00;
+	color: #000;
+}
+
+/* Search Bar --------------------------------------------------------------------------*/
+.search-box-container-inner {
+	width: 1170px;
+	height: 100%;
+}
+
+/* Slider --------------------------------------------------------------------------*/
+.hero-unit {
+	width: 100%;
+	padding: 0;
+	height: 600px;
+	margin: 0;
+}
+#layerslider span.header {
+	font-size: 60px;
+	color: #fff;
+	font-family: 'Oswald';
+	background-color:rgba(0,0,0,0.7);
+	font-weight: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 70px;
+}
+#layerslider span.text {
+	color: #fff;
+	font-size: 22px;
+	background-color:rgba(0,0,0,0.7);
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 25px;
+}

@@ -1,0 +1,99 @@
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+<Files *.inc>
+    Order deny,allow
+    Deny from all
+</Files>
+<IfModule mod_rewrite.c>
+
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^([A-Za-z0-9_\-]+)/([0-9]+)/([A-Za-z0-9_\-]+)$ index.php?url=$1&id=$2&title=$3 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^([A-Za-z0-9_\-]+)/music/([0-9]+)/([A-Za-z0-9_\-]+)/([A-Za-z0-9_\-]+)$ index.php?url=$1/music&page=$2&col=$3&sort=$4 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^blog/category/([A-Za-z0-9_\-]+)$ index.php?url=blog/&category=$1 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^changepass$ index.php?url=profile/index.php&act=forgot [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^changepass/$ index.php?url=profile/index.php&act=forgot [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^profile/enable$ index.php?url=profile/index.php&act=enable [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^profile/disable$ index.php?url=profile/index.php&act=disable [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^profile/enabled$ index.php?url=profile/index.php&info=enabled [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^profile/disabled$ index.php?url=profile/index.php&info=disabled [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^profile/edit$ index.php?url=profile/index.php&info=edit [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^profile/([A-Za-z0-9_\-]+)$ index.php?url=profile/view.php&user=$1 [L,NC,QSA]
+
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^login$ index.php?url=profile/index.php&login=1 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^forgot$ index.php?url=profile/index.php&forgot=1 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^register$ index.php?url=profile [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^regnow$ js/ajaxGateway/validate/register.php [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^regnownojs$ js/ajaxGateway/validate/register_nojs.php [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule ^([A-Za-z0-9_\-]+)/music/([A-Za-z0-9_\-\s']+)$ index.php?url=$1/music&song=$2 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule  ^([A-Za-z0-9_\-]+)/([0-9]+)$ index.php?url=$1&page=$2 [L,NC,QSA]
+
+  RewriteCond  %{REQUEST_FILENAME} !-f
+  RewriteCond  %{REQUEST_FILENAME} !-d
+  RewriteRule  ^(.*)$ /?url=$1 [L,NC,QSA]
+
+</IfModule>
+<IfModule mod_php5.c>
+  php_value upload_max_filesize 30M
+  php_value post_max_size 30M
+</IfModule>
+<IfModule mod_mime.c>
+  AddType application/x-httpd-php .html
+</IfModule>

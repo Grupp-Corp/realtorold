@@ -1,0 +1,167 @@
+.BlogEntry {
+	color:					#000;
+	border: 				1px solid #6AA3FF;
+	padding: 				6px 18px 6px 6px;
+	margin: 				0 0 5px 0;
+	background-color: 		white; 
+}
+.BlogEntry .underline {
+	color:#000;
+}
+.BlogEntry a {
+	color:#000;
+}
+.BlogEntry a:hover, .BlogEntry .underline:hover {
+	color:#666;
+}
+.BlogContent {
+	margin:10px 5px 0px 5px;
+}
+.Social {
+	margin:0 0 0 8px;
+}
+/* Headers */
+h2.Blog, #column2 h2.Blog, #column2 h2.Blog {
+	background: #FFFFFF url(/images/main/blog-title-bg.jpg) repeat-x;
+	height:29px;
+	line-height:29px;
+	display:block;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#FFF;
+	font-weight:normal;
+	padding:0 5px 0 4px;
+	margin:0 0 0 0;
+	font-size:1.0em;
+}
+h2.Blog a, #column2 h2.Blog a, #column2 h2.Blog a {
+	background: #FFFFFF url(/images/main/blog-title-bg.jpg) repeat-x;
+	height:29px;
+	line-height:29px;
+	display:block;
+	vertical-align:middle;
+	text-decoration:underline;
+	color:#FFF;
+	font-weight:normal;
+	padding:0 5px 0 4px;
+	margin:0 0 0 0;
+	font-size:1.0em;
+}
+h2.Blog a:hover, #column2 h2.Blog a:hover, #column2 h2.Blog a:hover {
+	background: #FFFFFF url(/images/main/blog-title-bg.jpg) repeat-x;
+	height:29px;
+	line-height:29px;
+	display:block;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#FFF;
+	font-weight:normal;
+	padding:0 5px 0 4px;
+	margin:0 0 0 0;
+	font-size:1.0em;
+}
+/* Read More Button */
+div.hero-unit div.ReadMore {
+	background: url(/images/main/read-more.png) no-repeat right;
+	width:100%;
+	display:block;
+	height:25px;
+	text-align:right;
+	line-height:25px;
+	vertical-align:middle;
+}
+div.hero-unit div.ReadMore a.ReadMore, #column2 div.ReadMore a.ReadMore, #column2 div.ReadMore a.ReadMore {
+	text-decoration:underline;
+	color:#FFF;
+	font-weight:normal;
+	font-size:12px;
+	vertical-align:middle;
+	padding:0 40px 0 0;
+	margin:0 0 0 0;
+}
+div.hero-unit div.ReadMore a.ReadMore:hover, #column2 div.ReadMore a.ReadMore:hover, #column2 div.ReadMore a.ReadMore:hover {
+	text-align:right;
+	text-decoration:none;
+	color:#FFF;
+	font-weight:normal;
+	font-size:12px;
+	vertical-align:middle;
+	padding:0 40px 0 0;
+	margin:0 0 0 0;
+}
+div.hero-unit div.ReadMore a.GoBack, #column2 div.ReadMore a.GoBack, #column2 div.ReadMore a.GoBack {
+	text-decoration:underline;
+	color:#FFF;
+	font-weight:normal;
+	font-size:12px;
+	vertical-align:middle;
+	padding:0 50px 0 0;
+	margin:0 0 0 0;
+}
+div.hero-unit div.ReadMore a.GoBack:hover, #column2 div.ReadMore a.GoBack:hover, #column2 div.ReadMore a.GoBack:hover {
+	text-align:right;
+	text-decoration:none;
+	color:#FFF;
+	font-weight:normal;
+	font-size:12px;
+	padding:0 50px 0 0;
+	margin:0 0 0 0;
+}
+/* Comments CSS */
+h3.comments, #column2 h3.comments #column2 h3.comments {  
+	display:block;
+	text-decoration:underline;
+	color:#FFF;
+	font-weight:normal;
+	text-transform:none;
+	padding:0 0 0 0;
+	margin:2px 0 15px 0;
+	font-size:1.2em;
+	border-radius: 6px;
+	border:1px solid #FFFFFF;
+	background-color:#333;
+	background: #FFFFFF url(/images/main/blog-title-bg.jpg) repeat-x;
+	width:335px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+}
+div.commentAuthor, #column2 div.commentAuthor #column2 div.commentAuthor {  
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+	font-weight:normal;
+	text-transform:none;
+	padding:2px 0 0 5px;
+	margin:5px 0 0 0;
+	font-size:1.2em;
+	border-radius: 6px;
+	box-shadow:3px 3px 3px #464646;
+	border:1px solid #000;
+	background-color:#333;
+	background: #FFFFFF url(/images/main/link.png);
+	width:335px;
+	text-align:left;
+}
+.commentBox {
+	color:#000;
+	background-color:#FFF;
+	border:1px solid #E8E8E8;
+	margin:5px 0 0 -5px;
+	padding: 6px 4px 6px 4px;
+	width:330px;
+	box-shadow:3px 3px 3px #464646;
+	border-radius:5px;
+}
+.commentBox span {
+	color:#000;
+	border:1px inset #E8E8E8;
+	background-color:#FFF;
+	padding: 2px 0 2px 0;
+	font-size:1.1em;
+	color:#000;
+}
+.commentBox .smalltext {
+	font-size:65%;
+	color:#333;
+}
