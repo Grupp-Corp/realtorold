@@ -17,6 +17,7 @@ class TemplateDesign extends CCTemplate
             $param['WebSiteTitle']  = $this->WebSiteTitle;
             $param['title']         = $this->PageTitle;
             $param['template_name'] = $this->config['template_name'];
+            $param['site_absolute_url'] = $this->config['site_absolute_url'];
             // Parse template
             $templateFile = 'doctype-title.php';
             $this->contentReturn = $this->ParseTemplate($templateFile, $param, 1);
@@ -35,6 +36,7 @@ class TemplateDesign extends CCTemplate
             $param['WebSiteTitle']      = $this->WebSiteTitle;
             $param['template_name']     = $this->config['template_name'];
             $param['SelectedTemplate']  = $this->SelectedTemplate;
+            $param['site_absolute_url'] = $this->config['site_absolute_url'];
             // Parse Template
             $templateFile = 'metas.php';
             $this->contentReturn = $this->ParseTemplate($templateFile, $param, $filetype);
@@ -83,6 +85,7 @@ class TemplateDesign extends CCTemplate
             $filetypePlugins = 4.5;
             $param = array();
             $param['template_name'] = $this->config['template_name'];
+            $param['site_absolute_url'] = $this->config['site_absolute_url'];
             // JavaScript
             $templateFile = 'index.php';
             $contentReturn = $this->ParseTemplate($templateFile, $param, $filetype);
@@ -113,6 +116,7 @@ class TemplateDesign extends CCTemplate
         try {
             $param = array();
             $param['template_name'] = $this->config['template_name'];
+            $param['site_absolute_url'] = $this->config['site_absolute_url'];
             // JavaScript
             $templateFile = 'header.php';
             $contentReturn = $this->ParseTemplate($templateFile, $param, $filetype);
@@ -140,6 +144,7 @@ class TemplateDesign extends CCTemplate
         $templateFile = 'top-menu.php';
 		$param['SelectedTemplate'] = $this->TemplatePath;
         $param['sess_prefix'] = $this->config['session_prefix'];
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
         $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
     }
@@ -148,6 +153,7 @@ class TemplateDesign extends CCTemplate
         $param = array();
         $param['SelectedTemplate'] = $this->TemplatePath;
         $param['sess_prefix'] = $this->config['session_prefix'];
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
         $templateFile = 'left-menu.php';
         $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
@@ -157,6 +163,7 @@ class TemplateDesign extends CCTemplate
         $param = array();
         $param['SelectedTemplate'] = $this->TemplatePath;
         $param['sess_prefix'] = $this->config['session_prefix'];
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
         $templateFile = 'right-menu.php';
         $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
@@ -164,6 +171,7 @@ class TemplateDesign extends CCTemplate
     // Site Pre-Content
     private function PreContentWrap() {
         $param = array();
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
         $templateFile = 'pre-content-wrap.php';
         $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
@@ -172,6 +180,7 @@ class TemplateDesign extends CCTemplate
     private function SiteBody() {
         // Vars
         $param = array();
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
         $param['title'] = $this->PageTitle;
         $param['template_name'] = $this->config['template_name'];
         // Check for URL
@@ -197,13 +206,16 @@ class TemplateDesign extends CCTemplate
     // Site Post Content
     private function PostContentWrap() {
         $templateFile = 'post-content-wrap.php';
-        $contentReturn = $this->ParseTemplate($templateFile, array(), 1);
+        $param = array();
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
+        $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
     }
     // Site Footer
     private function SiteFooter() {
         $templateFile = 'footer.php';
         $param = array();
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
         $param['VersionNumber'] = $this->CCCMS;
         $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
@@ -211,7 +223,9 @@ class TemplateDesign extends CCTemplate
     // Site Post Body
     private function EndContent() {
         $templateFile = 'end-content.php';
-        $contentReturn = $this->ParseTemplate($templateFile, array(), 1);
+        $param = array();
+        $param['site_absolute_url'] = $this->config['site_absolute_url'];
+        $contentReturn = $this->ParseTemplate($templateFile, $param, 1);
         return $contentReturn;
     }
     // Load Site
@@ -228,8 +242,14 @@ class TemplateDesign extends CCTemplate
 				error_reporting(0);
 			}
 			// Get Extensions
+			# CMGrupp Notes 5/18 - This looks like it is loading the different PHP class files
+			# With the ParseTemplate() function.
+			# Why don't we just load the whole application??? It's so tiny.
 			$this->SiteExtensions();
 			// Get PlugIns
+			# CMGrupp Notes 5/18 - This looks like it is loading the different PHP class files
+			# With the ParseTemplate() function.
+			# Why don't we just load the whole application??? It's so tiny.
 			$this->SitePlugIns();
 			// Get administration includes
 			if (isset($this->urlParts[0]) && $this->urlParts[0] == 'admin') {

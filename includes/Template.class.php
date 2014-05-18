@@ -9,7 +9,7 @@
 class CCTemplate 
 {
 	// LIVE CONFIG
-    const CONFIG_FILE = '/var/www/vhosts/myrealtorcliq.com/httpdocs/CMSConfig/Version 2.5.ini';
+    const CONFIG_FILE = "/CMSConfig/Version 2.5.ini";
     protected $config = array(
         'debug' => false,
         'session_prefix' => "dd_",
@@ -36,39 +36,6 @@ class CCTemplate
         'db_username' => "canuckc_sscharf",
         'db_password' => "cNZywTbX@STEVE"
     );
-    // Constant
-   	//const CONFIG_FILE = 'M:/Development/DaDaCliq/Development/CMSConfig/Version 2.5.ini';
-    /**
-    * Method Variables
-    * @access static
-    */  
-    /* Config Array with some defaults (CONFIG_FILE if successfully loaded overrides these values) */
-    /*protected $config = array(
-        'debug' => false,
-        'session_prefix' => "dd_",
-        'server_folder_path' => "M:/Development/DaDaCliq/Development/",
-        'include_path' => "M:/Development/DaDaCliq/Development/includes/",
-        'php_plugins_folder' => "M:/Development/DaDaCliq/Development/includes/plugins/",
-        'main_images_location' => "/images/",
-        'main_images_plugin_location' => "/images/plugins/",
-        'main_css_location' => "/css/",
-        'main_css_plugin_location' => "/css/plugins/",
-        'main_js_location' => "/js/",
-        'main_js_plugin_location' => "/js/plugins/",
-        'template_directory' => "/templates/",
-        'template_name' => "responsive",
-        'template_folder' => "responsive/",
-        'WebSiteTitle' => "DaDaCliq",
-		'WebSiteDomain' => "dadacliq",
-        'site_absolute_url' => "/",
-        'index_file' => "index.php",
-        'db_type' => "MySQL",
-        'db_host_name' => "localhost",
-        'db_name' => "canuckc_dadacliq",
-        'table_prefix' => "cms_",
-        'db_username' => "canuckc_sscharf",
-        'db_password' => "oem429opmi@STEVE"
-    );*/
     /* Error Related */
     protected $CCCMS = '2.5';
     protected $appError;
@@ -138,9 +105,16 @@ class CCTemplate
     * @return true/false
     */ 
     protected function getINI() {
+    	// Adding in a Relative Directory Setting to avoid back-tracing all of the code
+    	// Christian M. Grupp - 5/17/2014
+    	$this->config['server_folder_path'] = $GLOBALS['APPLICATION_PATH'];
+    	$this->config['include_path'] = $GLOBALS['INCLUDES_PATH'];
+    	$this->config['site_absolute_url'] = $GLOBALS['CLIENT_ROOT'];
+		$this->config['admin_access_folder'] = $GLOBALS['CLIENT_ROOT'] . "admin/";
+
         // Get INI
-        if (is_file(self::CONFIG_FILE)) {
-            $ini_data = parse_ini_file(self::CONFIG_FILE, __CLASS__);
+        if (is_file($GLOBALS['APPLICATION_PATH'] . self::CONFIG_FILE)) {
+            $ini_data = parse_ini_file($GLOBALS['APPLICATION_PATH'] . self::CONFIG_FILE, __CLASS__);
             // Load INI into variable
             $this->config = array_merge($this->config, $ini_data);
 			$this->config['templates_path'] = $this->config['template_directory'] . '/' . $this->config['template_name'] . '/' . $this->config['template_folder'];
@@ -161,6 +135,7 @@ class CCTemplate
             throw new CMSException("Fatal Error.");
             return false;
         }
+        
     }
 	/**
     * getPublicVariables   Passes public variable to the application
@@ -205,7 +180,7 @@ class CCTemplate
                 throw new CMSException("Fatal Error.");
                 return false;
             } else {
-                $this->db_conn = DBMySQLi::SQL($this->config['db_host_name'], $this->config['db_username'], $this->config['db_password'], $this->config['db_name']);
+            	$this->db_conn = DBMySQLi::SQL($this->config['db_host_name'], $this->config['db_username'], $this->config['db_password'], $this->config['db_name']);
                 if ($this->db_conn) {
                     // connected to the server 
                     $this->appError = 0;
@@ -479,11 +454,11 @@ class CCTemplate
             $this->PageTitle = $this->filehandle($this->TemplatePath, $URLSet, 2, 1, 1);
             // Defined global variables from Config
             $this->SelectedTemplate     =   $this->config['server_folder_path'] . $this->config['template_directory'] . '/' . $this->config['template_name'] . '/';
-            $this->TemplateDirectory    =   $this->config['server_folder_path'] . '/' . $this->config['template_directory'] . '/';
-            $this->JSDirectory          =   $this->config['server_folder_path'] . '/' . $this->config['main_js_location'] . '/';
-            $this->JSPluginsLocation    =   $this->config['server_folder_path'] . '/' . $this->config['main_js_plugin_location'] . '/';
-            $this->CSSDirectory         =   $this->config['server_folder_path'] . '/' . $this->config['main_css_location'] . '/';
-            $this->CSSPluginsLocation   =   $this->config['server_folder_path'] . '/' . $this->config['main_css_plugin_location'] . '/';
+            $this->TemplateDirectory    =   $this->config['server_folder_path'] . $this->config['template_directory'] . '/';
+            $this->JSDirectory          =   $this->config['server_folder_path'] . $this->config['main_js_location'] . '/';
+            $this->JSPluginsLocation    =   $this->config['server_folder_path'] . $this->config['main_js_plugin_location'] . '/';
+            $this->CSSDirectory         =   $this->config['server_folder_path'] . $this->config['main_css_location'] . '/';
+            $this->CSSPluginsLocation   =   $this->config['server_folder_path'] . $this->config['main_css_plugin_location'] . '/';
         } else { // Straight file check
             // Check if the file exists
             if (file_exists($URLSet)) {
@@ -548,6 +523,7 @@ class CCTemplate
         } else {  // Error
             $finaleFile = -1;
         }
+
 		// Ensure the file exists, otherwise skip loading it
 		if (file_exists($finaleFile)) {
 			// Check if the include exists

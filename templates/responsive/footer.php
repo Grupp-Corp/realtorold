@@ -40,7 +40,7 @@
       </form>
     </div>
     <div id="modalLoadBody" class="displayNone">
-      <img src="/images/loading.gif" height="31" width="31" alt="Loading..." title="Loading..." />
+      <img src="<?php echo $VarsToPass['site_absolute_url']; ?>images/loading.gif" height="31" width="31" alt="Loading..." title="Loading..." />
     </div>
     <div class="modal-footer">
       <button id="submitModalContact" name="SubmitAutoForm" class="btn btn-primary" type="submit">Send Message</button>
@@ -48,5 +48,5 @@
     </div>
   </div>
   <footer>
-    <img src="/images/responsive/realtor-footer-logo.png" width="442" height="155" alt="myRealtorCliq" />
+    <img src="<?php echo $VarsToPass['site_absolute_url']; ?>images/responsive/realtor-footer-logo.png" width="442" height="155" alt="myRealtorCliq" />
   </footer>
