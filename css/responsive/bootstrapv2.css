@@ -57,7 +57,7 @@ section {
 	background-color:#f1f1f1;
 }
 footer {
-	background-image:url(images/responsive/realtor-footer-bg.png);
+	background-image:url(/images/responsive/realtor-footer-bg.png);
 	background-repeat:repeat;
 	height:213px;
 	margin:0;
@@ -4495,7 +4495,7 @@ input[type="submit"].btn.btn-mini {
 	height:36px;
 	margin:0;
 	padding:0;
-	background-image:url(images/responsive/search-button.png);
+	background-image:url(/images/responsive/search-button.png);
 	background-repeat:no-repeat;
 	background-position:center;
 	border: none;
@@ -4888,7 +4888,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .navbar-inner {
   background-color: #1f1f1f;
   border-color: #1f1f1f;
-  background-image:url(images/responsive/realtor-banner-bg.png);
+  background-image:url(/images/responsive/realtor-banner-bg.png);
   background-repeat:repeat-x;
   height:95px;
   margin:0;

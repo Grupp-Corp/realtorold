@@ -7,28 +7,13 @@
  * @copyright (c) 2013, Guido Media
  */
 date_default_timezone_set('America/New_York');
-
-// Set the Globals for Docment Paths
-$GLOBALS['APPLICATION_PATH'] = __DIR__ . "/";
-$GLOBALS['INCLUDES_PATH'] = __DIR__ . "/includes/";
-
-$globalSetArray = explode("/", $_SERVER['REQUEST_URI']);
-
-// Add any other subdirectories the site has here.
-if (count($globalSetArray) === 2 || $globalSetArray[1] === 'admin') {
-	$GLOBALS['CLIENT_ROOT'] = '/';
-} else { 
-	$GLOBALS['CLIENT_ROOT'] = "/" . $globalSetArray[1] . "/";
-}
-
-ini_set('include_path', $GLOBALS['INCLUDES_PATH']); // Set Include path (LIVE)
-
+ini_set('include_path', '/Applications/XAMPP/htdocs/includes/'); // Set Include path (LIVE)
+//ini_set('include_path', 'M:/Development/DaDaCliq/Development/includes/'); // Set Include path
 // Calling classes based on .ini setting of the include path above
 include('Template.class.php');
 include('TemplateDesign.class.php');
 include('extensions/index.php');
 include('plugins/index.php');
-
 // Getting build class
 $Build = new TemplateDesign();
 // Check if redirect in content page

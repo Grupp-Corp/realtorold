@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?php echo $VarsToPass['site_absolute_url']; ?>css/plugins/slider/layerslider.css" type="text/css">
+<link rel="stylesheet" href="/css/plugins/slider/layerslider.css" type="text/css">
 <script type="text/javascript">
 /* <![CDATA[ */
 var site_absolute_url = '<?php echo $VarsToPass['site_absolute_url']; ?>';

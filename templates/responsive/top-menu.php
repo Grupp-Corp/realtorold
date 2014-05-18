@@ -6,12 +6,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div id="title"><a class="brand" href="<?php echo $VarsToPass['site_absolute_url']; ?>" title="myRealtorCliq"><h1>MyRealtorCliq.com</h1></a></div>
+      <div id="title"><a class="brand" href="/" title="myRealtorCliq"><h1>MyRealtorCliq.com</h1></a></div>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li><a href="<?php echo $VarsToPass['site_absolute_url']; ?>how-it-works" title="How It Works">How It Works</a></li>
-          <li><a href="<?php echo $VarsToPass['site_absolute_url']; ?>login" title="Login">Login</a></li>
-          <li class="blue-button"><a href="<?php echo $VarsToPass['site_absolute_url']; ?>register" title="Create an Account">Create an Account</a></li>
+          <li><a href="/how-it-works" title="How It Works">How It Works</a></li>
+          <li><a href="/login" title="Login">Login</a></li>
+          <li class="blue-button"><a href="/register" title="Create an Account">Create an Account</a></li>
         </ul>
       </div>
     </div>

@@ -112,7 +112,7 @@
                     <input class="input_field_12em" type="text"  pattern="[0-9]*" maxlength="5" name="ZIP" id="ZIP" required="required" value="<?php if (isset($_REQUEST['ZIP'])) { echo $_REQUEST['ZIP']; } ?>" />
                     <br />
                     <label class="registration" for="captcha">Captcha <span class="red">*</span></label>
-                    <div id="captchaimage"><a href="/register" id="refreshimg" title="Click to refresh image"><img src="<?php echo $VarsToPass['site_absolute_url']; ?>images/captcha/index.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" /></a></div>
+                    <div id="captchaimage"><a href="/register" id="refreshimg" title="Click to refresh image"><img src="/images/captcha/index.php?<?php echo time(); ?>" width="132" height="46" alt="Captcha image" /></a></div>
                     <input class="input_field_12em" type="text" name="captcha" id="captcha" maxlength="6" required="required" />
                     <br />
                 </fieldset>

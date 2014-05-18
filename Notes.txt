@@ -1,6 +1,0 @@
-1. Scattered config
-2. Search form coding
-3. Fix the issues with the registration checking
-4. Fields missing on the profile
-5. .htaccess - what are the requirements
-6. What are server install requirements?
